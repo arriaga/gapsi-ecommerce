@@ -1,8 +1,4 @@
 export const getProducts = async ( product , pagination) => {
-
-    console.log("Obteniendo Productos");
-    console.log(product);
-    console.log(pagination);
     const url = `https://node-red-nxdup.mybluemix.net/productos/${ product }/${ pagination }`
 
     const respuesta = await fetch(url);
